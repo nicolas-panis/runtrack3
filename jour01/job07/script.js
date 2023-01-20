@@ -23,7 +23,7 @@ function jourtravaille(date1){
     
     for(i = 0; i < tabferie.length; i++){
         if (date1.getDay() == tabferie[i].getDay() && date1.getMonth() == tabferie[i].getMonth()){
-            return console.log('Le ' + date1.toLocaleDateString("fr", options) + " est un jour férié");
+             return console.log('Le ' + date1.toLocaleDateString("fr", options) + " est un jour férié");
         }
     }
 
@@ -36,5 +36,5 @@ function jourtravaille(date1){
         
 }
 
-date1 = new Date('March 20, 2020 20:00:00');
+date1 = new Date('January 01, 2020 20:00:00');
 jourtravaille(date1);
