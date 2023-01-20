@@ -4,8 +4,7 @@ $(document).ready(function (){
     const name = document.querySelector("#name");
     const type = document.querySelector("#type");
 
-    txt = document.createElement("p");
-    body = document.querySelector("body");
+    const body = document.querySelector("body");
 
     $('#button').click(function (){
 
