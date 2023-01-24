@@ -23,6 +23,8 @@
             $sql = "INSERT INTO utilisateurs (nom, prenom, email, password) VALUES (?, ?, ?, ?)";
             $request = $db->prepare($sql);
             $request->execute(array($_POST['inscription_nom'], $_POST['inscription_prenom'], $_POST['inscription_email'], $_POST['inscription_mdp']));
+            unset($_POST);
+            header("Refresh:0");
         }
         
     ?>
