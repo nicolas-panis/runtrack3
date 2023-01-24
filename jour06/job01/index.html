@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <title>Index HTML</title>
+        <link id = "link" rel = "stylesheet" href = "style1.css"></link>
+        <script>
+            link = document.querySelector('#link');
+            $(window).on("resize", function () {
+                if (window.matchMedia("screen and (min-width: 1680px) and (max-width: 1920px)").matches){
+                    link.href = 'style2.css';
+                }
+                else if (window.matchMedia("screen and (min-width: 1280px) and (max-width: 1680px)").matches){
+                    link.href = 'style3.css';
+                }
+                else if (window.matchMedia("screen and (max-width: 1280px)").matches){
+                    link.href = 'style4.css';
+                }
+            })
+            
+        </script>
+        
+    </head>
+
+    
+
+    <body>
+        
+
+    </body>
+    
+
+</html>
